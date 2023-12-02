@@ -1,0 +1,59 @@
+Introduction: 
+	HTTP, or Hypertext Transfer Protocol, is the foundation of data communication on the World Wide Web.
+ Over the years, it has evolved to keep up with the demands of modern web applications and user expectations.
+ Two significant versions of HTTP are HTTP/1.1 and HTTP/2, each with its own set of features and improvements.
+ We will delve into the key differences between HTTP/1.1 and HTTP/2 to better understand how they impact web performance and user experience.
+
+
+HTTP/1.1
+----------
+@ Introduced in 1999
+@ Uses a single, persistent connection for each resource
+@ Limited parallelism, leading to head-of-line blocking
+@ Compression is optional
+@ No prioritization of resources
+
+
+
+HTTP/2
+----------
+@ Introduced in 2015
+@ Multiplexing: Allows multiple requests and responses simultaneously
+@ Binary framing: Efficiently compresses headers
+@ Header compression: Reduces overhead
+@ Server push: Allows the server to send resources proactively
+@ Prioritization: Resources can be assigned different priority levels
+
+Performance Comparison:
+
+* HTTP/2 significantly reduces latency due to multiplexing.
+
+* Header compression minimizes overhead, improving load times.
+
+* Server push enhances performance by sending resources proactively.
+
+* Prioritization ensures critical resources are loaded faster.
+
+Adoption and Considerations:
+
+* HTTP/2 adoption is widespread, but HTTP/1.1 still prevalent.
+
+* Ensure server and client support for HTTP/2.
+
+* Consider upgrading to HTTP/2 for improved performance.
+
+* Monitor performance metrics to validate improvements.
+
+Conclusion:
+
+* HTTP/1.1 and HTTP/2 are significant HTTP versions.
+
+* HTTP/2 offers superior performance through multiplexing, compression, and prioritization.
+
+* The adoption of HTTP/2 can improve web user experiences.
+
+* Stay informed about emerging HTTP standards for future enhancements.
+
+
+
+

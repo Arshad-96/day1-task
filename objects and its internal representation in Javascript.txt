@@ -1,0 +1,91 @@
+Objects and Their Internal Representation in JavaScript
+
+Introduction:
+	JavaScript is a versatile and widely-used programming language that relies heavily on objects. In JavaScript, everything is an object or can be treated as an object, making it a fundamental concept to grasp for any developer. In this blog, we'll dive into the world of objects in JavaScript, exploring their internal representation, properties, and the dynamic nature that makes them so powerful. Objects is like a container that holds different property. Object store their element as a key-value pairs, each key value pair is termed as property.
+What are Objects?
+Definition: Objects are fundamental data structures in JavaScript.
+*	Collections of key-value pairs
+
+*	Versatile and flexible
+
+*	Used for data modelling and organization
+
+*	For Eg. If your object is a student, it will have properties like name, age, address.
+--------------------------------------------------------------------------------------------------------------------
+Code example:
+
+ const person = {
+firstName: "Arshad",
+lasstName: "Hussain:,
+ade: 27,
+job: "Developer"
+}
+--------------------------------------------------------------------------------------------------------------------
+Internal Representation:
+
+*	Objects are implemented as collections of properties.
+
+*	Each property has a name (string) and a value (any data type).
+
+*	Properties can be data properties or accessor properties (getters and setters).
+
+
+
+Data Properties: 
+
+*	Data properties store values directly.
+*	Have four attributes:
+
+1.	Value: The property's value.
+2.	Writable: Whether the value can be changed.
+3.	Enumerable: Whether the property can be iterated.
+4.	Configurable: Whether the property can be deleted or its attributes modified.
+Accessing Object Properties:
+	You can access object properties using dot notation or bracket notation:
+--------------------------------------------------------------------------------------------------------------------
+Code example:
+console.log(person.firstName) // Arshad
+console.log(person["laststName"]) // Hussain
+--------------------------------------------------------------------------------------------------------------------
+Adding and Modifying Object Properties:
+	Objects in JavaScript are mutable, meaning you can add, modify, or delete properties after their creation:
+--------------------------------------------------------------------------------------------------------------------
+Code example:
+person.email = arshad@email.com // addind a new property
+person.age = 28 // modifying an existing property
+--------------------------------------------------------------------------------------------------------------------
+Objects Can Contain Other Objects:
+	One of the powerful features of JavaScript objects is that they can contain other objects. This allows you to represent complex data structures:
+
+const address = {
+street: first st,
+city: vellore,
+pin: 635805
+};
+
+person.address = address; // adding an object as a property
+--------------------------------------------------------------------------------------------------------------------
+Now, person has an additional property, address, which is another object.
+
+Methods in Objects:
+	In JavaScript, you can also include functions as properties in objects. These functions are called methods
+--------------------------------------------------------------------------------------------------------------------
+//Code example:
+
+const calculator = {
+
+add: function(a,b){
+return a+b ;
+},
+sub: funcion(a,b){
+return a-b ;
+}
+};
+
+console.log(calculator.add(2,5) // 8
+console.log(calculator.sub(5,3) // 2
+--------------------------------------------------------------------------------------------------------------------
+
+Conclusion:
+
+	Objects are at the heart of JavaScript, allowing you to structure and manipulate data efficiently. They are collections of key-value pairs, and their flexibility makes them a powerful tool for developers. Understanding how objects work and their internal representation is fundamental to mastering JavaScript, as it forms the basis for many advanced concepts and frameworks within the language. So, the next time you work with JavaScript, remember that objects are your trusty companions for data organization and manipulation.
